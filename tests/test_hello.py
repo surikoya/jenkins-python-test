@@ -1,14 +1,8 @@
 import pytest
-from click.testing import CliRunner
 
-from irisvmpy import iris
+from basic import hello
 
-class TestCLI(object):
+class HelloWorldTest(unittest.TestCase):
 
-    @pytest.fixture()
-    def runner(self):
-        return CliRunner()
-
-    def test_print_help_succeeds(self, runner):
-        result = runner.invoke(iris.cli, ['--help'])
-        assert result.exit_code == 0
+    def test_say_hi(self):
+        self.assertEqual(hello(), "Hello, World!")
