@@ -6,7 +6,7 @@ setup(
 	version='0.0.1',
 	description='Basic python build',
 	author='Suresh Koya',
-	author_email="sk@gm.com',
+	author_email='sk@gm.com',
 	packages=find_packages(),
 	install_requires=requirements,
 	entry_points={
