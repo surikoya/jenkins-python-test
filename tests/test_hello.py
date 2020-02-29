@@ -1,9 +1,10 @@
 import unittest
+import sys
+sys.path.append('../src')
 
-
-from basic import hello
+import hello
 
 class HelloWorldTest(unittest.TestCase):
 
     def test_say_hi(self):
-        self.assertEqual(hello(), "Hello, World!")
+        self.assertEqual(hello/.hello(), "Hello, World!")
